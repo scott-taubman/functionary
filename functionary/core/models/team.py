@@ -13,7 +13,7 @@ class Team(models.Model):
         name: the name of the team
     """
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4,              editable=False)
     name = models.CharField(max_length=64, unique=True, db_index=True)
 
     def __str__(self):

@@ -1,6 +1,5 @@
-import click
-
 from .tokens import login
+import click
 
 
 @click.command("login")
