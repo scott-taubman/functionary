@@ -1,5 +1,5 @@
 {
-  "name": "Functionary App & Dependencies",
+  "name": "functionary",
   "dockerComposeFile": "docker-compose.yml",
   "service": "functionary",
   "workspaceFolder": "/workspace",
@@ -11,14 +11,14 @@
       "extensions": [
         "davidanson.vscode-markdownlint",
         "esbenp.prettier-vscode",
-        "ms-python.black-formatter",
-        "ms-python.isort",
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort"
       ]
     }
   },
-  "forwardPorts": [5000, 5671, 5672, 15671, 15672, 6379, 8000],
+  "forwardPorts": [8000],
   "postCreateCommand": "pip install -r requirements.txt -r requirements-dev.txt",
   "remoteUser": "vscode"
 }
