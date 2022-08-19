@@ -2,7 +2,7 @@
   "name": "functionary",
   "dockerComposeFile": "docker-compose.yml",
   "service": "functionary",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/workspace/functionary",
   "customizations": {
     "vscode": {
       "settings": {
