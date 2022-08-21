@@ -17,6 +17,8 @@ services:
     hostname: functionary
     volumes:
       - ../../:/workspace:cached
+      - vscode-server-extensions:/home/vscode/.vscode-server/extensions
+      - vscode-server-insiders-extensions:/home/vscode/.vscode-server-insiders/extensions
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
@@ -52,6 +54,8 @@ networks:
     name: dev-network
 
 volumes:
+  vscode-server-extensions:
+  vscode-server-insiders-extensions:
   rabbitmq-data:
   redis-data:
   registry-data:
