@@ -15,13 +15,10 @@ services:
 
     container_name: functionary
     hostname: functionary
-    environment:
-      - SSH_AUTH_SOCK=/home/vscode/.ssh_auth_sock
     volumes:
       - ../../:/workspace:cached
       - vscode-server-extensions:/home/vscode/.vscode-server/extensions
       - vscode-server-insiders-extensions:/home/vscode/.vscode-server-insiders/extensions
-      - ${SSH_AUTH_SOCK}:/home/vscode/.ssh_auth_sock
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
