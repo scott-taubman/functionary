@@ -3,6 +3,7 @@ django
 django-allauth
 django-celery-beat
 django-htmx
+django-tables2
 django-widget-tweaks
 docker
 jsonschema
