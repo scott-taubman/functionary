@@ -67,7 +67,7 @@
                                 <h3 class="fw-semibold">
                                     <i class="fa fa-heart-pulse fa-sm fa-fw me-1"></i>Status
                                 </h3>
-                                <div class="ms-4 my-2">{% render_field form.status class="form-select" %}</div>
+                                <div class="ms-4 my-2">{% render_field form.status class="form-select" role="menu" %}</div>
                                 <div class="text-danger">{{ form.status.errors }}</div>
                             </div>
                         {% endif %}
@@ -96,9 +96,9 @@
                             </h3>
                             <div class="ms-4 my-2">
                                 {% if update %}
-                                    {% render_field form.function disabled=True class="form-select" %}
+                                    {% render_field form.function disabled=True class="form-select" role="menu" %}
                                 {% else %}
-                                    {% render_field form.function class="form-select" %}
+                                    {% render_field form.function class="form-select" role="menu" %}
                                 {% endif %}
                                 <div class="text-danger">{{ form.function.errors }}</div>
                             </div>
