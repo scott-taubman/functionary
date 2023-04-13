@@ -53,6 +53,12 @@ details > summary > * {
 .navbar-nav .nav-link:not(.active):focus {
     background-color: var(--bs-nav-link-color);
 }
+.fa-sort {
+    color: var(--bs-gray-500);
+}
+.orderable a:hover .fa-sort {
+    color: var(--bs-link-hover-color);
+}
 /* the :has() must be user enabled to work on firefox */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:has#browser_compatibility */
 div:has(input[type="checkbox"][name="wrap"]:not(:checked)) ~ pre {
@@ -103,20 +109,4 @@ body div aside {
 /* Re-apply backdrop color because table wipes it */
 table .modal-backdrop {
     background-color: var(--bs-backdrop-bg);
-}
-
-/* table sorting indicators */
-th.asc::after,
-th.desc::after {
-    font-family: var(--fa-style-family,"Font Awesome 6 Free");
-    color: var(--bs-primary);
-    font-size: 0.75em;
-    line-height: .05em;
-    padding-left: .5em;
-}
-th.asc::after {
-    content: '\f077';    /* chevron-up */
-}
-th.desc::after {
-    content: '\f078';    /* chevron-down */
 }

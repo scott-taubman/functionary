@@ -35,6 +35,7 @@ class ScheduledTaskTable(tables.Table):
         ),
         verbose_name="Scheduled Task",
     )
+    function = tables.Column(accessor="function__name", verbose_name="Function")
     last_run = tables.DateTimeColumn(
         accessor="most_recent_task__created_at",
         verbose_name="Last Run",
@@ -44,6 +45,7 @@ class ScheduledTaskTable(tables.Table):
     schedule = tables.Column(accessor="periodic_task__crontab", verbose_name="Schedule")
     edit_button = tables.Column(
         accessor="id",
+        orderable=False,
         verbose_name="",
     )
 
