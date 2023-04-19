@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.shortcuts import redirect
 
 from ui.views.utils import set_session_environment
 
@@ -10,4 +10,4 @@ def home(request):
         environment = request.user.environments.order_by("team__name", "name").first()
         set_session_environment(request, environment)
 
-    return render(request, "home.html")
+    return redirect("ui:task-list")
