@@ -1,0 +1,95 @@
+{
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "name": "Run Script: start",
+      "request": "launch",
+      "command": "npm run start",
+      "cwd": "${workspaceFolder}/sdk"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: start - yamlgen",
+      "request": "launch",
+      "command": "npm start",
+      "cwd": "${workspaceFolder}/yamlGen"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: jest functionarySDK",
+      "request": "launch",
+      "command": "npx jest functionarySDK.test.js",
+      "cwd": "${workspaceFolder}/sdk/test"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: jest http",
+      "request": "launch",
+      "command": "npx jest httpClient.test.js",
+      "cwd": "${workspaceFolder}/sdk/test"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: jest task",
+      "request": "launch",
+      "command": "npx jest task.test.js",
+      "cwd": "${workspaceFolder}/sdk/test"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: jest sequence",
+      "request": "launch",
+      "command": "npx jest sequence.test.js",
+      "cwd": "${workspaceFolder}/sdk/test"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: v2w",
+      "request": "launch",
+      "command": "node w2vSVM.js",
+      "cwd": "${workspaceFolder}/yamlGen/ml"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: scraperTest",
+      "request": "launch",
+      "command": "node scraperTest.js",
+      "cwd": "${workspaceFolder}/yamlGen/ml"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: synaptic",
+      "request": "launch",
+      "command": "node synaptic.js",
+      "cwd": "${workspaceFolder}/yamlGen/ml"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: scraper",
+      "request": "launch",
+      "command": "node scraper.js",
+      "cwd": "${workspaceFolder}/yamlGen/scraper"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: jsdoc.test.js",
+      "request": "launch",
+      "command": "node jsdoc.test.js",
+      "cwd": "${workspaceFolder}/yamlGen/tests"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: noComments.test.js",
+      "request": "launch",
+      "command": "node noComments.test.js",
+      "cwd": "${workspaceFolder}/yamlGen/tests"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: guessParams.test.js",
+      "request": "launch",
+      "command": "npx jest guessParams.test.js",
+      "cwd": "${workspaceFolder}/yamlGen/tests"
+    }
+  ]
+}
